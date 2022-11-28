@@ -1,0 +1,1 @@
+# PS-000.0-Slidin-videos-Slide-Transition-Detection-and-Title-Extraction-in-Lecture-Video
