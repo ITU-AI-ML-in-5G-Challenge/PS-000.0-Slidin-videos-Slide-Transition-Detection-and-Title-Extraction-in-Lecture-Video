@@ -41,7 +41,15 @@ YouTube’s “Video Chapter” feature segments a video into sections marked by
   • In statistical analysis of binary classification, the F-score or F-measure or F1 score is a measure of a test's accuracy. The evaluation is based on F1-score that combines the precision and recall into a single metric by taking their harmonic mean.
   
   • Another metric used is AUROC, wich is the cost difference of accuracy between the ROC curve for the baseline and proposed: Basically, area under the curve.
-  
+
+# Dataset Preparation - Steps involved:
+Since this challenge has video as the input source, we needed to extract frames from these video files for feeding deep model. Therefore, for dataset preparation we used following steps: 
+1.	The videos frames per second (fps) is 25 
+2.	Use video files to extract images, 25 frames per second video
+3.	That is, if the video is of X length, the total number of frames will be X(minute)*60(second)*25(fps)
+4.	Once the images are extracted, they are categorized into training and validation sets
+5.	There are three types of images: no title, same title and new title slides 
+
 # Key contribution and advantages
   • Model used ResNet101 (createDeepLabv3) 
   
